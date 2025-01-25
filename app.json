@@ -8,7 +8,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "icon": "./assets/images/app-icon-all.png",
+    "icon": "./assets/icons/splash/Spash.png",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -18,20 +18,20 @@
       "**/*"
     ],
     "android": {
-      "icon": "./assets/images/app-icon-android-legacy.png",
+      "icon": "./assets/icons/splash/Spash.png",
       "package": "com.Anudhinam",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
-        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+        "foregroundImage": "./assets/icons/splash/Spash.png",
+        "backgroundImage": "./assets/icons/splash/Spash.png"
       }
     },
     "ios": {
-      "icon": "./assets/images/app-icon-ios.png",
+      "icon": "./assets/icons/splash/Spash.png",
       "supportsTablet": true,
       "bundleIdentifier": "com.Anudhinam"
     },
     "web": {
-      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "favicon": "./assets/icons/splash/Spash.png",
       "bundler": "metro"
     },
     "plugins": [
@@ -40,8 +40,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/app-icon-android-adaptive-foreground.png",
-          "imageWidth": 300,
+          "image": "./assets/icons/splash/Spash.png",
           "resizeMode": "contain",
           "backgroundColor": "#191015"
         }
