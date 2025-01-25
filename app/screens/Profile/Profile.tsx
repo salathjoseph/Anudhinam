@@ -10,7 +10,6 @@ const Profile = () => {
   const [language, setLanguage] = useState('en');
 
   const handleSave = () => {
-    // Basic validation
     if (!name || !phone || !email) {
       Alert.alert('Error', 'Please fill in all fields');
       return;
@@ -28,7 +27,6 @@ const Profile = () => {
 
   return (
     <View style={tw`flex-1 justify-center items-center bg-gray-100 p-4`}>
-      <Text style={tw`text-xl font-bold mb-4`}>Profile</Text>
 
       <Text style={tw`text-sm text-gray-700 mb-2`}>Name</Text>
       <TextInput

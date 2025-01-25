@@ -47,7 +47,7 @@ export function DemoNavigator() {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
         tabBarHideOnKeyboard: true,
         tabBarStyle: themed([$tabBar, { height: bottom + 70 }]),
         tabBarActiveTintColor: colors.text,
@@ -60,6 +60,7 @@ export function DemoNavigator() {
         name="DemoShowroom"
         component={DashboardScreen}
         options={{
+          headerShown: false,
           tabBarLabel: translate("demoNavigator:componentsTab"),
           tabBarIcon: ({ focused }) => (
             <Icon icon="home" size={30} />
