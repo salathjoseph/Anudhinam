@@ -18,7 +18,6 @@ const menuItems: { id: number; title: string; icon: keyof typeof Ionicons.glyphM
 export const DashboardScreen: FC = observer(function DashboardScreen() {
   return (
     <SafeAreaView style={tw`flex-1 bg-white`}>
-      {/* Header Section */}
       <View style={tw`h-44 bg-pink-500 rounded-br-3xl overflow-hidden relative`}>
         <View style={tw`flex-1 px-5 py-6 flex-row justify-between items-start`}>
           <View>
@@ -49,7 +48,6 @@ export const DashboardScreen: FC = observer(function DashboardScreen() {
           ))}
         </View>
 
-        {/* List of Adds Card */}
         <View style={tw`bg-blue-100 rounded-lg p-5 mt-4 mb-6`}>
           <View style={tw`flex-row items-center`}>
             <Ionicons name="newspaper-outline" size={24} color="#666" />
