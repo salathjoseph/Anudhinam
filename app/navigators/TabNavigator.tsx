@@ -9,8 +9,8 @@ import type { ThemedStyle } from "@/theme"
 import { AppStackParamList, AppStackScreenProps } from "./AppNavigator"
 import { useAppTheme } from "@/utils/useAppTheme"
 import AlertNotification from "@/screens/Notification/Notification"
-import DashboardScreen from "@/screens/Dashboard/Dashboard"
 import Notes from "@/screens/Notes/Notes"
+import { DashboardScreen } from "@/screens/Dashboard/Dashboard"
 export type DemoTabParamList = {
   DemoCommunity: undefined
   DemoShowroom: { queryIndex?: string; itemIndex?: string }
