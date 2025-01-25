@@ -6,7 +6,7 @@ import tw from "twrnc"
 
 const { width } = Dimensions.get("window")
 
-const menuItems = [
+const menuItems: { id: number; title: string; icon: keyof typeof Ionicons.glyphMap }[] = [
   { id: 1, title: "Walking", icon: "walk-outline" },
   { id: 2, title: "Cycling", icon: "bicycle-outline" },
   { id: 3, title: "Driving", icon: "car-outline" },
@@ -43,7 +43,7 @@ export const DashboardScreen: FC = observer(function DashboardScreen() {
               key={item.id}
               style={tw`w-[${(width - 60) / 3}px] h-[${(width - 60) / 3}px] bg-blue-100 rounded-lg mb-4 p-4 items-center justify-center`}
             >
-              {/* <Ionicons name={item.icon} size={24} color="#333" /> */}
+              <Ionicons name={item.icon} size={24} color="#333" />
               <Text style={tw`mt-2 text-xs text-gray-800 text-center`}>{item.title}</Text>
             </TouchableOpacity>
           ))}
